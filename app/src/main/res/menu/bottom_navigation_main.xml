@@ -4,17 +4,17 @@
         android:id="@+id/home"
         android:title="Home" />
 
-    <item android:icon="@drawable/ic_view_list"
+    <item android:icon="@drawable/ic_view_newfeed"
         android:id="@+id/newfeed"
-        android:title="Home" />
-    <item android:icon="@drawable/ic_view_list"
+        android:title="Newfeed" />
+    <item android:icon="@drawable/ic_view_message"
         android:id="@+id/mess"
-        android:title="Home" />
-    <item android:icon="@drawable/ic_view_list"
+        android:title="Message" />
+    <item android:icon="@drawable/ic_view_notice"
         android:id="@+id/notice"
-        android:title="Home" />
-    <item android:icon="@drawable/ic_view_list"
+        android:title="Notice" />
+    <item android:icon="@drawable/ic_view_drawer"
         android:id="@+id/drawer"
-        android:title="Home" />
+        android:title="" />
 
 </menu>

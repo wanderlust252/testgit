@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#8888"
+    android:background="#eeeeee"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></android.support.v7.widget.CardView>
 
     <TableLayout
-
+        android:layout_weight="0.1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
             android:stretchColumns="*"
@@ -18,16 +22,20 @@
 
                 <LinearLayout
                     android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="100dp"
+                    android:layout_height="50dp">
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:src="@drawable/ic_videocam"
+                        android:background="#f6ffc1"
 
                         />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="hello"
+                        android:text="Camera trực tiếp"
+                        android:textColor="#0069cb"
+                        android:paddingLeft="5dp"
                         android:layout_height="wrap_content" />
 
                 </LinearLayout>
@@ -38,58 +46,21 @@
 
                 <LinearLayout
                     android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="100dp"
+                    android:layout_height="50dp">
+                    >
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:src="@drawable/ic_group"
+                        android:background="#f6ffc1"
 
                         />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="hello"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-        </TableRow>
-        <TableRow>
-            <android.support.v7.widget.CardView
-                android:layout_margin="5dp"
-                >
-
-                <LinearLayout
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="hello"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_margin="5dp"
-                >
-
-                <LinearLayout
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="hello"
+                        android:text="Nhóm"
+                        android:paddingLeft="5dp"
+                        android:textColor="#0069cb"
                         android:layout_height="wrap_content" />
 
                 </LinearLayout>
@@ -102,16 +73,20 @@
 
                 <LinearLayout
                     android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="100dp"
+                    android:layout_height="50dp">
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:src="@drawable/ic_contact_phone"
+                        android:background="#f6ffc1"
 
                         />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="hello"
+                        android:text="Danh bạ"
+                        android:textColor="#0069cb"
+                        android:paddingLeft="5dp"
                         android:layout_height="wrap_content" />
 
                 </LinearLayout>
@@ -122,16 +97,21 @@
 
                 <LinearLayout
                     android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="100dp"
+                    android:layout_height="50dp">
+                    >
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
+                        android:src="@drawable/ic_event"
+                        android:background="#f6ffc1"
 
                         />
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="hello"
+                        android:text="Sự kiện"
+                        android:paddingLeft="5dp"
+                        android:textColor="#0069cb"
                         android:layout_height="wrap_content" />
 
                 </LinearLayout>
@@ -140,11 +120,16 @@
 
 
     </TableLayout>
-    <android.support.v4.widget.DrawerLayout
-        android:id="@+id/bottom_navigation"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="#ffffff"
+        app:itemTextColor="#FFF"
+        app:menu="@menu/bottom_navigation_main"/>
 
- />
-</RelativeLayout>
+</LinearLayout>
